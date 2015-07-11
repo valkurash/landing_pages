@@ -1,0 +1,400 @@
+﻿<header class="header cf">
+	<div class="header__left cf">
+		<div class="menu">
+			<div class="menu__handler" data-ga-category="header" data-ga-action="mainmenubutton" data-ga-ltype="onsite">
+				<div class="menu__brick">
+					<div class="menu__brick-item"></div>
+					<div class="menu__brick-item"></div>
+					<div class="menu__brick-item"></div>
+				</div>
+			</div>
+		</div>
+		<a class="logo" href="#"><img src="img/logo.png?v={{timestamp}}" /></a>
+		<div class="header__title">Страхование {{tourFields.title}}</div>
+	</div>
+	<div class="header__right">
+		<div class="header__contact">
+			<div class="header__phone">8 800 755-80-00</div>
+			<div class="win-popup win-popup_callback win-popup_callback _active" ng-show="showCallbackUp"><div class="win-popup__wrap"><div class="win-popup__close" ng-click="showCallbackUp=false"></div><div class="win-popup__title"></div><form class="form form_callback" method="post" action="/api/SalesForceCallback/" data-validate="true" novalidate="novalidate"><div class="input-wrap input-wrap_fio"><span class="label-wrap label-wrap_fio"><label class="label label_fio">Ваше имя</label></span><input id="fio" type="text" data-id="{2B5140CA-AE2F-436B-BD12-2696394FC5A6}" placeholder="" name="Name" class="input  input_medium input_fio" data-mask="[а-яА-ЯёЁ\.\-\\ ]+" data-regex="true" data-placeholder="_" data-rule-required="required" data-message-required="Поле обязательно для заполнения" data-rule-namecyr="nameCyr" data-message-namecyr="Поле может содержать только кирилличские символы и дефис" data-quote-type=""></div><div class="input-wrap input-wrap_phone"><span class="label-wrap label-wrap_phone"><label class="label label_phone">Мобильный телефон</label></span><input id="phone" type="text" data-id="{50AC1E73-6635-47FB-8079-331960BE710E}" placeholder="" name="Phone" class="input  input_medium input_phone" data-mask="+7 (999) 999-99-99" data-placeholder="_" data-rule-required="required" data-message-required="Поле обязательно для заполнения" data-rule-phone="phone" data-message-phone="Неправильный формат телефона" data-quote-type=""></div><div class="input-wrap input-wrap_date input-wrap_date"><span class="label-wrap label-wrap_date"><label class="label label_date">Дата звонка</label></span><input id="date" type="text" data-id="{105FA717-A65A-4A27-945E-27048FC6DE02}" placeholder="" name="CallDate" class="input  input_date input_date hasDatepicker" data-value="today" data-min="today" data-rule-required="required" data-message-required="Поле обязательно для заполнения" data-rule-ddmmyyyy="ddmmyyyy" data-message-ddmmyyyy="Введите дату правильно" data-rule-dateminmax="dateminmax" data-message-dateminmax="Дата выходит за пределы допустимых значений" data-mask="d.m.y" data-quote-type=""></div><div class="fieldset fieldset_timerange fieldset_call-time"><div class="fieldset__title fieldset__title_timerange fieldset__title_inline">Время звонка</div><div class="input-wrap input-wrap_inline input-wrap_timerange input-wrap_call-time"><label class="label label_from" for="call-time-from">с</label><input id="call-time-from" class="input input_from input_timerange input_call-time" type="text" placeholder="часов" data-rule-required="required" data-message-required="Поле обязательно для заполнения" data-rule-timerange="timerange" data-message-timerange="Некорректное время" name="StartTime"></div><div class="input-wrap input-wrap_inline input-wrap_timerange input-wrap_call-time"><label class="label label_to" for="call-time-to">до</label><input id="call-time-to" class="input input_to input_timerange input_call-time" type="text" placeholder="часов" data-rule-required="required" data-message-required="Поле обязательно для заполнения" data-rule-timerange="timerange" data-message-timerange="Некорректное время" name="EndTime"></div></div><div class="select-wrap select-wrap_reason" style="z-index: 300;"><span class="label-wrap label-wrap_reason"><label class="label label_reason">Повод для звонка</label></span><span class="select select_Reason"><div class="select__area"><span class="select__selection">Поговорить</span><span class="select__button"></span></div><select data-key="reason" name="Reason" class="_customized" style="display: none;"><option value="Страховой случай" data-key="report">Страховой случай</option><option value="Статус запроса" data-key="learn">Статус запроса</option><option value="Купить страховку" data-key="buy">Купить страховку</option><option value="Обсудить условия" data-key="discuss">Обсудить условия</option><option value="Поговорить" data-key="talk" selected="">Поговорить</option></select><div class="select__list-wrapper" unselectable="on" style="-webkit-user-select: none; display: none; height: auto;"><ul class="select__list"><li class="select__list-item">Страховой случай</li><li class="select__list-item">Статус запроса</li><li class="select__list-item">Купить страховку</li><li class="select__list-item">Обсудить условия</li><li class="select__list-item select__list-item_selected select__list-item_current">Поговорить</li></ul></div></span></div><input type="submit" class="yellow-btn" value="Позвоните мне"></form></div></div>
+		</div>
+		<a class="callback_link" ng-click="showCallbackUp=!showCallbackUp">Бесплатный обратный звонок</a>
+	</div>
+</header>
+<div class="block-content" ng-class="tourFields.class">
+	<div class="relative-block">
+		<div class="block__background">
+			<img ng-src="{{tourFields.img1}}?v={{timestamp}}" alt="turist image">
+		</div>
+		<div class="block__items text_white top cf">
+			<h2 class="main-title">Страхование {{tourFields.title}}</h2>
+			<div class="icons-block">
+				<div class="icons-block__item icons-block__item--sofa">
+					<div class="icon icon--sofa"></div>
+					<div class="description">
+						<div class="title">Не нужно ехать<br />в офис</div>
+						Большинство вопросов можно решить по телефону или онлайн
+					</div>
+				</div>
+				<div class="icons-block__item icons-block__item--phone">
+					<div class="icon icon--phone"></div>
+					<div class="description">
+						<div class="title">Не нужно ждать</div>
+						Мы работаем 24/7
+					</div>
+				</div>
+				<div class="icons-block__item icons-block__item--boots">
+					<div class="icon icon--boots"></div>
+					<div class="description">
+						<div class="title">Не нужно под нас подстраиваться</div>
+						Мы выплатим страховое возмещение так, как удобно вам
+					</div>
+				</div>
+				<div class="icons-block__item icons-block__item--card">
+					<div class="icon icon--card"></div>
+					<div class="description">
+						<div class="title">Не нужны лишние<br />документы</div>
+						Только необходимый минимум
+					</div>
+				</div>
+				<div class="icons-block__item icons-block__item--smile">
+					<div class="icon icon--smile"></div>
+					<div class="description">
+						<div class="title">Не нужно беспокоиться</div>
+						Мы оперативно принимаем решение о выплате
+					</div>
+				</div>
+			</div>
+			<div class="form_block">
+				<div class="form__title">Оставьте заявку на страхование прямо сейчас</div>
+				<input type="text" placeholder="Имя" />
+				<input type="text" placeholder="Телефон" />
+				<input type="text" placeholder="E-mail" />
+				<a class="yellow-btn">Оставить заявку</a>
+			</div>
+		</div>
+	</div>
+	<div class="white-block top calculator_flat calculator_travel ">
+		<div class="content">
+			<div class="calculator__steps">
+				<div class="calculator__step calculator__step_current calculator__step_delim">
+					<div class="calculator__step-wrap">
+						<div class="calculator__step-number">1</div>
+						<div class="calculator__step-label">Рассчитайте страховку</div>
+					</div>
+				</div>
+				<div class="calculator__step calculator__step_delim">
+					<div class="calculator__step-wrap">
+						<div class="calculator__step-number">2</div>
+						<div class="calculator__step-label">Укажите данные <br>и оплатите картой</div>
+					</div>
+				</div>
+				<div class="calculator__step">
+					<div class="calculator__step-wrap">
+						<div class="calculator__step-number">3</div>
+						<div class="calculator__step-label">Получите полис<br>на e-mail</div>
+					</div>
+				</div>
+			</div>
+			<form class="form form_calculator">
+				<div class="fieldset fieldset_country">
+					<div class="fieldset__title fieldset__title_country">Куда едете?</div>
+					<div class="input-wrap input-wrap_autocomplete input-wrap_search">
+						<div class="autocomplete-wrapper autocomplete-wrapper_inside">
+							<div class="autocomplete-result"></div>
+							<input id="search" placeholder="Укажите название страны" type="text" data-country-name="Countries" data-area-name="Area" data-inside="true" name="search" data-id="{8EA708C4-6DED-4040-ADDC-AC8D4B986179}" class="input input_autocomplete input_search _autocomplete ui-autocomplete-input" data-accumulative="true" data-source="" autocomplete="off" style="width: 690px;"><div class="input-clear"></div>
+						</div>
+						<div class="autocomplete-helper autocomplete-helper_bottom">
+							Например:
+							<a href="#" class="blue-link blue-link_dashed" data-subject="Франция">Франция</a>, <a href="#" class="blue-link blue-link_dashed" data-subject="Великобритания">Великобритания</a>, <a href="#" class="blue-link blue-link_dashed" data-subject="Шенген">Шенген</a>&nbsp;или&nbsp;<a href="#" class="blue-link blue-link_dashed" data-subject="Весь мир">Весь мир</a>
+						</div>
+					</div>
+				</div>
+				<div class="fieldset fieldset_radio-group fieldset_type">
+					<div class="fieldset__title fieldset__title_type">Тип страховки</div>
+					<div class="radio-wrap radio-wrap_default" ng-class="{'_checked' : travelCalc.termType == 'single'}">
+						<label for="type-single">
+							<span class="radio radio_single">
+								<span class="checked_radio">
+									<input type="radio" id="type-single" name="termType" ng-model="travelCalc.termType" ng-value="'single'">
+								</span>
+							</span><span>Разовая</span>
+						</label>
+					</div>
+					<div class="radio-wrap radio-wrap_default" ng-class="{'_checked' : travelCalc.termType == 'annual'}">
+						<label for="type-multiple">
+							<span class="radio radio_multiple">
+								<span class="checked_radio">
+									<input type="radio" id="type-multiple" name="termType" ng-model="travelCalc.termType" ng-value="'annual'">
+								</span>
+							</span><span>Многократная на год</span>
+						</label>
+					</div>
+				</div>
+				<div class="fieldset fieldset_radio-group fieldset_cover">
+					<div class="fieldset__title fieldset__title_cover">Валюта полиса</div>
+					<div class="radio-wrap radio-wrap_default" ng-class="{'_checked' : travelCalc.currency == 'eur'}">
+						<label for="type-eur">
+							<span class="radio radio_eur">
+								<span class="checked_radio">
+									<input type="radio" id="type-eur" name="currency" ng-model="travelCalc.currency" ng-value="'eur'">
+								</span>
+							</span><span>EUR</span>
+						</label>
+					</div>
+					<div class="radio-wrap radio-wrap_default" ng-class="{'_checked' : travelCalc.currency == 'usd'}">
+						<label for="type-usd">
+							<span class="radio radio_usd">
+								<span class="checked_radio">
+									<input type="radio" id="type-usd" name="currency" ng-model="travelCalc.currency" ng-value="'usd'">
+								</span>
+							</span><span>USD</span>
+						</label>
+					</div>
+				</div>
+				<div class="fieldset fieldset_info">
+					<div class="fieldset fieldset_range fieldset_policy-period _hidden">
+						<div class="input-wrap input-wrap_inline input-wrap_from input-wrap_policy-period">
+							<label class="label label_inline" for="policy-period-from">Дата начала действия</label>
+							<input type="text" id="policy-period-from" name="TripStartDate" class="input input_from input_date input_date-from input-wrap_inline hasDatepicker" disabled="" data-mask="d.m.y" data-max="+1y">
+						</div>
+						<div class="input-wrap input-wrap_inline input-wrap_to input-wrap_policy-period">
+							<label class="label label_inline" for="policy-period-to">Дата окончания действия</label>
+							<input type="text" id="policy-period-to" name="TripEndDate" class="input input_to input_date input_date-to input_inline hasDatepicker" disabled="" data-mask="d.m.y" readonly="readonly">
+						</div>
+					</div>
+					<div class="fieldset fieldset_range fieldset_travel-period styled_datepicker">
+						<div class="input-wrap input-wrap_inline input-wrap_from input-wrap_travel-period">
+							<label class="label label_inline" for="travel-period-from">Когда уезжаете?</label>
+							<input type="text" id="travel-period-from" name="TripStartDate" class="input input_from input_date input_date-from input-wrap_inline" set-mask="d.m.y" jquery-date-picker ng-model="travelCalc.tripStartDate " min-date="travelCalc.tripStartDateMin" max-date="travelCalc.tripStartDateMax" default-date="travelCalc.tripStartDateMin">
+						</div>
+						<div class="input-wrap input-wrap_inline input-wrap_to input-wrap_travel-period">
+							<label class="label label_inline" for="travel-period-to">Когда возвращаетесь?</label>
+							<input type="text" id="travel-period-to" name="TripEndDate" class="input input_to input_date input_date-to input_inline" set-mask="d.m.y" jquery-date-picker ng-model="travelCalc.tripEndDate" min-date="travelCalc.tripEndDateMin" max-date="travelCalc.tripEndDateMax">
+						</div>
+					</div>
+					<div data-id="{68FA7054-2EBC-4E4E-8B0B-47D239CA8BB9}" data-restore="true" class="fieldset fieldset_finland _hidden">
+						<div class="input-wrap input-wrap_date input-wrap_visa-date">
+							<span class="label-wrap label-wrap_visa-date">
+								<label class="label label_visa-date">Дата подачи документов на визу</label>
+							</span>
+							<input id="visa-date" type="text" data-id="{E1D813DC-9027-407A-9284-92E10E941BF9}" placeholder="" name="VisaDate" class="input  input_date input_visa-date hasDatepicker" data-mask="d.m.y" data-quote-type="" disabled="">
+						</div>
+						<div class="txt txt_finland-text">По требованию посольства Финляндии, полис должен действовать на момент подачи документов на получение визы.</div>
+					</div>
+					<div class="fieldset fieldset_radio-group fieldset_days _hidden">
+						<div class="fieldset__title fieldset__title_days">Количество дней страхования</div>
+						<div class="radio-wrap radio-wrap_default radio-wrap_15">
+							<span class="radio _checked _disabled">
+								<input type="radio" class="radiobutton radiobutton_15" id="days-15" name="TripDayCount" value="15" checked="" disabled="">
+							</span>
+							<label for="days-15" class="label label_radio">15</label>
+						</div>
+						<div class="radio-wrap radio-wrap_default radio-wrap_45">
+							<span class="radio _disabled"><input type="radio" class="radiobutton radiobutton_45" id="days-45" name="TripDayCount" value="45" disabled=""></span>
+							<label for="days-45" class="label label_radio">45</label>
+						</div>
+						<div class="radio-wrap radio-wrap_default radio-wrap_90">
+							<span class="radio _disabled"><input type="radio" class="radiobutton radiobutton_90" id="days-90" name="TripDayCount" value="90" disabled=""></span>
+							<label for="days-90" class="label label_radio">90</label>
+						</div>
+					</div>
+					<div class="element-val-wrap element-val-wrap_days">
+						<div class="label label_val label_days">Количество дней страхования —</div><div class="element-val element-val_days">15</div>
+						<input type="hidden" value="15" data-label="Количество дней страхования —" name="TripDayCount" data-quote-type="">
+					</div>
+					<div data-id="{1E6E8349-F1A7-4786-9186-AD698C3D81A8}" data-restore="true" class="fieldset fieldset_schengen _hidden">
+						<div class="element-val-wrap element-val-wrap_policy-period-value">
+							<div class="label label_val label_policy-period-value">Срок действия полиса</div><div class="element-val element-val_policy-period-value"></div>
+						</div><div class="txt txt_schengen-text">Срок действия полиса увеличен на 15 дней в соответствии с Визовым Кодексом стран Шенгенской зоны</div>
+					</div>
+				</div>
+				<div data-id="{930735B1-BF03-4E14-91A8-55528D139574}" data-restore="true" class="fieldset fieldset_tourists"><div class="fieldset__title fieldset__title_tourists">Кто едет?</div><div class="input-wrap input-wrap_spinner input-wrap_spinner-outside input-wrap_inline input-wrap_adults"><label class="label label_inline" for="adults">Взрослые <span>(от 12 до 60)</span></label><div class="ui-spinner-div-val">0</div><span class="ui-spinner ui-widget ui-widget-content ui-corner-all ui-spinner-div" style="height: 52px;"><input type="text" class="input input_spinner input_adults ui-spinner-input" data-default="0" data-min="0" data-max="5" value="0" name="QuantityAdults" data-step="" data-id="{92B19D48-D8FF-4D75-A422-37A0A25BD565}" data-quote-type="" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0" autocomplete="off" role="spinbutton" tabindex="-1" style="display: none;"><a class="ui-spinner-button ui-spinner-up ui-corner-tr ui-button ui-widget ui-state-default ui-button-text-only" tabindex="-1" role="button"><span class="ui-button-text"><span class="ui-icon ui-icon-triangle-1-n">▲</span></span></a><a class="ui-spinner-button ui-spinner-down ui-corner-br ui-button ui-widget ui-state-default ui-button-text-only" tabindex="-1" role="button"><span class="ui-button-text"><span class="ui-icon ui-icon-triangle-1-s">▼</span></span></a></span></div><div class="input-wrap input-wrap_spinner input-wrap_spinner-outside input-wrap_inline input-wrap_kids"><label class="label label_inline" for="kids">Дети <span>(от 0 до 11)</span></label><div class="ui-spinner-div-val">0</div><span class="ui-spinner ui-widget ui-widget-content ui-corner-all ui-spinner-div" style="height: 52px;"><input type="text" class="input input_spinner input_kids ui-spinner-input" data-default="" data-min="0" data-max="3" value="0" name="QuantityChildren" data-step="" data-id="{887A3083-A2D7-4EF6-9B14-D2FDBCECEE16}" data-quote-type="" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0" autocomplete="off" role="spinbutton" tabindex="-1" style="display: none;"><a class="ui-spinner-button ui-spinner-up ui-corner-tr ui-button ui-widget ui-state-default ui-button-text-only" tabindex="-1" role="button"><span class="ui-button-text"><span class="ui-icon ui-icon-triangle-1-n">▲</span></span></a><a class="ui-spinner-button ui-spinner-down ui-corner-br ui-button ui-widget ui-state-default ui-button-text-only" tabindex="-1" role="button"><span class="ui-button-text"><span class="ui-icon ui-icon-triangle-1-s">▼</span></span></a></span></div><div class="input-wrap input-wrap_spinner input-wrap_spinner-outside input-wrap_inline input-wrap_pensioners"><label class="label label_inline" for="pensioners">Пенсионеры <span>(от 61 до 80)</span></label><div class="ui-spinner-div-val">0</div><span class="ui-spinner ui-widget ui-widget-content ui-corner-all ui-spinner-div" style="height: 52px;"><input type="text" class="input input_spinner input_pensioners ui-spinner-input" data-default="" data-min="0" data-max="2" value="0" name="QuantitySeniors" data-step="" data-id="{257C5DB9-CD67-4314-BF64-594D4075D685}" data-quote-type="" aria-valuemin="0" aria-valuemax="2" aria-valuenow="0" autocomplete="off" role="spinbutton" tabindex="-1" style="display: none;"><a class="ui-spinner-button ui-spinner-up ui-corner-tr ui-button ui-widget ui-state-default ui-button-text-only" tabindex="-1" role="button"><span class="ui-button-text"><span class="ui-icon ui-icon-triangle-1-n">▲</span></span></a><a class="ui-spinner-button ui-spinner-down ui-corner-br ui-button ui-widget ui-state-default ui-button-text-only" tabindex="-1" role="button"><span class="ui-button-text"><span class="ui-icon ui-icon-triangle-1-s">▼</span></span></a></span></div></div><div data-id="{B6258BC8-A928-4E45-BE97-F0F5B1E7B140}" data-restore="true" class="fieldset fieldset_sum"><div class="fieldset fieldset_radio-group fieldset_sum"><div class="fieldset__title fieldset__title_sum">Выберите страховую сумму<span class="help-icon"><span class="help-icon__popup"><span class="help-icon__inner">В базовую страховку включены следующие медицинские и медико-транспортные расходы:<br><ul><br><li> на получение экстренной амбулаторной и стационарной помощи</li><br><li> на  медицинское оборудование - приобретение костылей и/или прокат кресла-каталки, если это необходимо по медицинским показаниям.</li><br><li> на медицинскую транспортировку Застрахованного с места происшествия в медицинское учреждение или в другое медицинское учреждение для обеспечения необходимого лечения </li><br><li> на медицинскую  эвакуацию Застрахованного из страны временного пребывания до места постоянного проживания (или до медицинского учреждения по месту постоянного проживания) </li><br><li> на сопровождающее лицо (для обеспечения надлежащего медицинского наблюдения) во время транспортировки, если такое сопровождение требуется по медицинским показаниям</li><br><li> на досрочное возвращение в страну постоянного проживания детей, находящихся при Застрахованном и оставшихся без присмотра в результате произошедшего с ним Страхового случая</li><br><li> на организацию возможности передачи срочных сообщений, связанных со страховым случаем (телефонные переговоры, доступ к интернету, передача факсимильных сообщений)</li><br><li> на посмертную репатриацию</li><br><li> на визит в чрезвычайной ситуации одного близкого совершеннолетнего родственника Застрахованного или, по согласованию со страховой компанией, иного совершеннолетнего лица, если состояние здоровья Застрахованного оценивается лечащим врачом и сервисной компанией как критическое, угрожающее жизни или в случае, если срок госпитализации Застрахованного, путешествующего в одиночку, превышает 10 дней.</li><br><li> на лекарства, медикаменты</li><br><li> на экстренную стоматологическую помощь</li><br></ul><br></span></span></span></div><div class="radio-wrap radio-wrap_default radio-wrap_30"><span class="radio _checked"><input type="radio" class="radiobutton radiobutton_30" id="sum-30" name="SumAssuredCode" value="30000" checked=""></span><label for="sum-30" class="label label_radio">30 000</label></div><div class="radio-wrap radio-wrap_default radio-wrap_50"><span class="radio"><input type="radio" class="radiobutton radiobutton_50" id="sum-50" name="SumAssuredCode" value="50000"></span><label for="sum-50" class="label label_radio">50 000</label></div><div class="radio-wrap radio-wrap_default radio-wrap_100"><span class="radio"><input type="radio" class="radiobutton radiobutton_100" id="sum-100" name="SumAssuredCode" value="100000"></span><label for="sum-100" class="label label_radio">100 000</label></div></div></div><a href="#" class="cta yellow-btn yellow-btn_count cta_count _disabled">Рассчитать</a><div data-id="{ADF262F1-2E4E-4B58-B7E2-0AF08E7E05A1}" data-restore="true" class="fieldset fieldset_options _hidden">
+					<div class="fieldset__title fieldset__title_options">Выберите тариф:</div><div class="after-title">(Для оформления визы подходят все)</div><table class="calculator__table calculator__table_options">
+						<thead>
+							<tr>
+								<th class="calculator__cell calculator__cell_header calculator__cell_base">
+									<div class="calculator__header-icon"></div>Спокойный отдых<span class="help-icon">
+										<span class="help-icon__popup">
+											<span class="help-icon__inner">
+												Медицинские и транспортные расходы в результате спокойного отдыха, в покрытие не входит катание на лыжах, активный пляжный отдых.
+											</span>
+										</span>
+									</span><input type="hidden" value="None" data-label="Спокойный отдых" name="SportActivity[1]" data-quote-type="">
+								</th>
+								<th class="calculator__cell calculator__cell_header calculator__cell_active">
+									<div class="calculator__header-icon"></div>Активный отдых<span class="help-icon">
+										<span class="help-icon__popup">
+											<span class="help-icon__inner">
+												Мы выплатим возмещение, если страховой случай наступит вследствие активного отдыха (развлечения на воде с использованием водных велосипедов, водных мотоциклов, буксируемых надувных средств и парашютов, снорклинга, посещения аквапарка, игры в волейбол/футбол на пляже, катания на лыжах (кроме горных), коньках, спуска в пещеры с экскурсией, велосипедных прогулок (кроме занятий маунтинбайком), занятий теннисом, гольфом, катания на роликах, бега трусцой, катания на животных.
+											</span>
+										</span>
+									</span><input type="hidden" value="ActiveLeisure" data-label="Активный отдых" name="SportActivity[2]" data-quote-type="">
+								</th>
+								<th class="calculator__cell calculator__cell_header calculator__cell_sport"><div class="calculator__header-icon"></div>Опасные виды спорта<span class="help-icon"><span class="help-icon__popup"><span class="help-icon__inner">Медицинские и медико-транспортные расходы, возникшие вследствие занятий Застрахованным опасными видами спорта, в том числе: - авто- и мотоспорт, конный спорт, рафтинг и водный туризм, дайвинг (с погружением на глубину до 20 м), катание на горных лыжах и сноуборде на специально оборудованных трассах, занятия маунтинбайком, контактные единоборства, альпинизм, скалолазание, спелеология, горный туризм, стрельба, участие в охоте с применением любого вида оружия, а также езда на квадроциклах и скутерах.</span></span></span><input type="hidden" value="Extreme" data-label="Опасные виды спорта" name="SportActivity[3]" data-quote-type=""></th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr><td colspan="3" class="calculator__cell calculator__cell_extra"><a href="#" class="blue-link blue-link_dashed calculator__show-extra" data-expanded-title="Скрыть дополнительные опции">Дополнительные опции</a></td></tr>
+							<tr class="_hidden">
+								<td colspan="3" class="calculator__cell calculator__cell_apartment _with-slider">
+									<div class="checkbox-wrap checkbox-wrap_propertyamount checkbox-wrap_big">
+										<span class="checkbox checkbox_big checkbox_propertyamount"><input type="checkbox" id="propertyamount" name="PropertyAmount" value="true" data-id="{8EFFC1A7-1D63-4FD7-89FB-04B5F3CA6912}" data-class="checkbox checkbox_big checkbox_propertyamount"></span><label for="propertyamount" class="label label_checkbox label_propertyamount">Страхование квартиры на время поездки</label><span class="help-icon">
+											<span class="help-icon__popup">
+												<span class="help-icon__inner">
+													Застрахованное имущество: внутренняя отделка, инженерное оборудование, движимое имущество в квартире. Страховые риски: пожар, взрыв, удар молнии, залив, стихийные бедствия. Страхование по заявленной стоимости, т.е. страхователь сам определяет страховую сумму.
+												</span>
+											</span>
+										</span>
+									</div>
+								</td>
+							</tr>
+							<tr class="_hidden _has-slider"><td colspan="3" class="calculator__cell calculator__cell_slider"><div class="input-wrap input-wrap_slider input-wrap_apartment"><label class="label label_inline" for="apartment">Сумма страхования</label><input type="text" class="input input_slider input_apartment" data-default="30000" data-min="5000" data-max="50000" value="30000" name="PropertyAmount" data-step="1000" data-currency="usd" disabled="" data-quote-type=""><div class="slider-wrapper"><div class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="slider__range" style="width: 55.5555572509766%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 55.5555555555556%;"></span></div><div class="slider__info" style="left: -6px;"><span>30 000</span></div><div class="slider__price slider__price_min"><span>5 000</span><span class="slider__currency">EUR</span></div><div class="slider__price slider__price_max"><span>50 000</span><span class="slider__currency">EUR</span></div></div></div></td></tr>
+							<tr class="_hidden">
+								<td colspan="3" class="calculator__cell calculator__cell_accident _with-slider">
+									<div class="checkbox-wrap checkbox-wrap_personalaccidentamount checkbox-wrap_big">
+										<span class="checkbox checkbox_big checkbox_personalaccidentamount"><input type="checkbox" id="personalaccidentamount" name="PersonalAccidentAmount" value="true" data-id="{B46286D8-BFA3-4F3F-8CB6-6A1DE2C56EDD}" data-class="checkbox checkbox_big checkbox_personalaccidentamount"></span><label for="personalaccidentamount" class="label label_checkbox label_personalaccidentamount">Страхование от несчастного случая</label><span class="help-icon">
+											<span class="help-icon__popup">
+												<span class="help-icon__inner">
+													Смерть в результате несчастного случая, Инвалидность I, II группы, категория «ребенок-инвалид» в результате несчастного случая.
+												</span>
+											</span>
+										</span>
+									</div>
+								</td>
+							</tr>
+							<tr class="_hidden _has-slider"><td colspan="3" class="calculator__cell calculator__cell_slider"><div class="input-wrap input-wrap_slider input-wrap_accident"><label class="label label_inline" for="accident">Сумма страхования</label><input type="text" class="input input_slider input_accident" data-default="30000" data-min="5000" data-max="50000" value="30000" name="PersonalAccidentAmount" data-step="1000" data-currency="usd" disabled="" data-quote-type=""><div class="slider-wrapper"><div class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="slider__range" style="width: 55.5555572509766%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 55.5555555555556%;"></span></div><div class="slider__info" style="left: -6px;"><span>30 000</span></div><div class="slider__price slider__price_min"><span>5 000</span><span class="slider__currency">EUR</span></div><div class="slider__price slider__price_max"><span>50 000</span><span class="slider__currency">EUR</span></div></div></div></td></tr>
+							<tr class="_hidden">
+								<td colspan="3" class="calculator__cell calculator__cell_luggage">
+									<div class="checkbox-wrap checkbox-wrap_luggage checkbox-wrap_big">
+										<span class="checkbox checkbox_big checkbox_luggage"><input type="checkbox" id="luggage" name="Luggage" value="true" data-id="{9A258B70-52D3-4790-BC12-BFC0C2D45071}" data-class="checkbox checkbox_big checkbox_luggage"></span><label for="luggage" class="label label_checkbox label_luggage">Багаж</label><span class="help-icon">
+											<span class="help-icon__popup">
+												<span class="help-icon__inner">
+													<ul>
+														<li> Страхование фото и видеотехники, спортивного оборудования от риска возникновения расходов в результате осуществления противоправных действий третьими лицами</li>
+														<li> Страхование от риска возникновения расходов, понесенных  в случае утраты или задержки багажа в период, когда ответственность за сохранность багажа несет перевозчик. В случае утраты багажа в период перевозки, мы возместим расходы в размере 40 у.е. за каждый килограмм багажа. В случае задержки багажа в период перевозки на срок более 6  часов мы возместим расходы на приобретение вещей первой необходимости на сумму не более 50 у.е. Вещами первой необходимости считаются, в том числе, предметы по уходу за детьми. </li>
+													</ul>
+													Страховая сумма по указанным рискам – до 1000 у.е.
+												</span>
+											</span>
+										</span>
+									</div>
+								</td>
+							</tr>
+							<tr class="_hidden">
+								<td colspan="3" class="calculator__cell calculator__cell_cancel">
+									<div class="checkbox-wrap checkbox-wrap_tripcancellation checkbox-wrap_big">
+										<span class="checkbox checkbox_big checkbox_tripcancellation"><input type="checkbox" id="tripcancellation" name="TripCancellation" value="true" data-id="{3B3FF498-5F21-4E7D-B5F5-7E637CDF04F2}" data-class="checkbox checkbox_big checkbox_tripcancellation"></span><label for="tripcancellation" class="label label_checkbox label_tripcancellation">Отмена поездки</label><span class="help-icon">
+											<span class="help-icon__popup">
+												<span class="help-icon__inner">
+													Страхование от риска возникновения непредвиденных расходов Застрахованного в результате отмены или вынужденного переноса сроков поездки по следующим причинам (возникшим после оплаты поездки и заключения Договора страхования): заболевание или травма, отмена или задержка стыковочных авиарейсов или поездов, отказ или задержка в выдаче Застрахованному въездной визы и т.д. Страховая сумма по этому риску – до 1000 у.е.
+												</span>
+											</span>
+										</span>
+									</div>
+								</td>
+							</tr>
+						</tfoot>
+						<tbody><tr><td class="calculator__cell calculator__cell_footer calculator__cell_base"><a class="calculator__result _get-view-flat _buy-policy-flat" data-buy-index="0" data-flat="newvzr" data-checkout="{7B534BF0-55A4-490E-AB23-F57FC42AE509}" href="#"><span class="_result">0</span><span class="rouble"></span></a></td><td class="calculator__cell calculator__cell_footer calculator__cell_active"><a class="calculator__result _get-view-flat _buy-policy-flat" data-buy-index="1" data-flat="newvzr" data-checkout="{7B534BF0-55A4-490E-AB23-F57FC42AE509}" href="#"><span class="_result">0</span><span class="rouble"></span></a></td><td class="calculator__cell calculator__cell_footer calculator__cell_sport"><a class="calculator__result _get-view-flat _buy-policy-flat" data-buy-index="2" data-flat="newvzr" data-checkout="{7B534BF0-55A4-490E-AB23-F57FC42AE509}" href="#"><span class="_result">0</span><span class="rouble"></span></a></td></tr></tbody>
+					</table>
+				</div>
+			</form>
+			<h2 class="main-title">Купите полис онлайн за 2 минуты</h2>
+		</div>
+	</div>
+	<div class="relative-block">
+		<div class="block__background">
+			<img ng-src="{{tourFields.img2}}?v={{timestamp}}" alt="turist image">
+		</div>
+		<div class="block__items text_white bottom cf turizm">
+			<h2 class="main-title">От чего страхуем?</h2>
+			<div class="text">Страхование туристов, выезжающих за рубеж – это услуга, цель которой: защитить клиента в период его пребывания за границей. Туристическое страхование является продуктом комплексным, и включает в себя элементы имущественного, личного страхования и страхования ответственности. Въезд туристов на территорию целого ряда стран без полиса невозможен. Кроме того наличие страховки – это обязательное условие при получении визы любого типа: деловой, гостевой или туристической.</div>
+			<div class="icons-block cf">
+				<div class="icons-block__item icons-block__item--med">
+					<div class="icon icon--med"></div>
+					<div class="description"><div class="title">Медицинскиенские расходы</div></div>
+				</div>
+				<div class="icons-block__item icons-block__item--docs">
+					<div class="icon icon--docs"></div>
+					<div class="description"><div class="title">На случай утери документов</div></div>
+				</div>
+				<div class="icons-block__item icons-block__item--visa">
+					<div class="icon icon--visa"></div>
+					<div class="description"><div class="title">На случай неполучения визы</div></div>
+				</div>
+				<div class="icons-block__item icons-block__item--shark">
+					<div class="icon icon--shark"></div>
+					<div class="description"><div class="title">От несчастного случая</div></div>
+				</div>
+				<div class="icons-block__item icons-block__item--photo">
+					<div class="icon icon--photo"></div>
+					<div class="description"><div class="title">Вещи от кражи</div></div>
+				</div>
+				<div class="icons-block__item icons-block__item--plain">
+					<div class="icon icon--plain"></div>
+					<div class="description"><div class="title">На случай задержки рейса или срыва стыковки</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="white-block bottom">
+		<div class="content cf">
+			<h2 class="main-title">Оплачивайте как вам удобно</h2>
+			<div class="two-column">
+				<p class="title">1 год</p>
+				Традиционно не значит плохо &ndash; оплатите страховку как привыкли, т.е. на год вперед. Не беспокойтесь &ndash; мы обязательно напомним об кокнчании<br />срока действия полиса.
+			</div>
+			<div class="two-column two-column--last">
+				<p class="title">1 месяц</p>
+				Это удобно &ndash; платеж автоматически списывается с вашей банковской карты. Просто скажите &laquo;стоп&raquo; &ndash; в любое<br />время вы можете приостановить платежи<br />или изменить платежные реквизиты.
+			</div>
+		</div>
+	</div>
+	<div class="white-block grey">
+		<div class="content cf">
+			<h2 class="main-title">Страхование {{tourFields.word}}</h2>
+			<div ng-show="tourFields.class=='turist'">
+				<div class="two-column ">
+					<p class="title">На какую помощь может рассчитывать турист за границей?</p>
+					<div class="paragraph">
+						Стандартный страховой полис гарантирует:
+						<ul class="numeric-list">
+							<li>получение медицинской информации и необходимых медикаментов;</li>
+							<li>предоставление стоматологической помощи;</li>
+							<li>предоставление клиенту экстренной амбулаторной и стационарной помощи в рамках страховой суммы;</li>
+							<li>возможность воспользоваться медицинским оборудованием и транспортом;</li>
+							<li>визит в чрезвычайной ситуации;</li>
+							<li>возвращение детей, сопровождающих клиента, на родину;</li>
+							<li>посмертную репатриацию.</li>
+						</ul>
+					</div>
+					<p class="title title--inner">Какие дополнительные пункты может включать в себя страховой полис туриста?</p>
+					<div class="paragraph">По желанию клиента в стандартный договор страхования могут быть включены риски смерти и получения инвалидности в результате несчастного случая, утери багажа и документов, отмены или досрочного возвращения из поездки. Полис может покрывать обращение за юридической помощью и расходы, возникшие вследствие причинения клиентом вреда третьим лицам. С целью удешевления страховки в договоре может быть прописана сумма расходов, которую клиент обязуется покрыть за свой счет – франшиза.</div>
+				</div>
+				<div class="two-column two-column--last">
+					<p class="title">Что представляет собой туристическое страхование?</p>
+					<div class="paragraph">Страхование туристов, выезжающих за рубеж – это услуга, цель которой: защитить клиента в период его пребывания за границей. Туристическое страхование является продуктом комплексным, и включает в себя элементы имущественного, личного страхования и страхования ответственности. Въезд туристов на территорию целого ряда стран без полиса невозможен. Кроме того наличие страховки – это обязательное условие при получении визы любого типа: деловой, гостевой или туристической.</div>
+					<div class="paragraph">Размер страхового покрытия определяется клиентом и страховщиком в индивидуальном порядке. Причем страховая сумма может изменяться как по всему комплексу услуг, так и отдельно по каждому риску. Действует полис исключительно в пределах дат, указанных в договоре, и только на территории стран, указанных в документе. Оплачивается страховка до начала поездки и обязательно в полном объеме.</div>
+				</div>
+			</div>
+			<div ng-show="tourFields.class=='turizm'">
+				<div class="two-column ">
+					<p class="title">Какой информацией необходимо владеть для оформления туристического полиса?</p>
+					<div class="paragraph">
+						Для оформления страхового полиса необходимо:
+						<ul class="numeric-list">
+							<li>заранее определиться с точными датами поездки: туристический полис, в отличие от большинства видов страхования, рассчитывается на каждый день пребывания за рубежом;</li>
+							<li>указать количество и возраст всех участников поездки;</li>
+							<li>выбрать сумму страхового покрытия, учитывая свои финансовые возможности.</li>
+						</ul>
+					</div>
+					<div class="paragraph">Стандартный полис рассчитан на туристов, предпочитающих размеренный отдых. Поэтому, если поездка предусматривает профессиональные тренировки и занятия экстремальными видами спорта, это обязательно нужно указать в заявке. То же самое касается и активных видов отдыха: прыжков с парашютом, катания на водных велосипедах, погружения с аквалангом и даже игры в волейбол на пляже.</div>
+				</div>
+				<div class="two-column two-column--last">
+					<p class="title">Чем удобно страхование туристов онлайн?</p>
+					<div class="paragraph">Страховка, оформленная самостоятельно с помощью онлайн-сервиса, ничем не отличается от документа, полученного в офисе компании. Но для ее оформления требуется гораздо меньше времени и усилий: клиент может приступить к оформлению заявки в любое время дня и ночи, находясь на работе или дома.</div>
+					<div class="paragraph">Еще один плюс онлайн-страхования туристов – наглядное формирование стоимости полиса. Добавляя риски и опции, самостоятельно изменяя страховую сумму, клиент может сформировать такой пакет услуг, который полностью удовлетворит его требования.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
