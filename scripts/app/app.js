@@ -6,70 +6,70 @@ appRoot
 			//Setup routes to load partial templates from server. TemplateUrl is the location for the server view (Razor .cshtml view)
 			$routeProvider
 				.when('/flat', {
-					templateUrl: '/flat.html',
+					templateUrl: 'flat.html',
 					controller: 'MainController',
 					resolve: {
 						propType: function() { return 'flat'; }
 					}
 				})
 				.when('/house', {
-					templateUrl: '/flat.html',
+					templateUrl: 'flat.html',
 					controller: 'MainController',
 					resolve: {
 						propType: function() { return 'house'; }
 					}
 				})
 				.when('/dacha', {
-					templateUrl: '/flat.html',
+					templateUrl: 'flat.html',
 					controller: 'MainController',
 					resolve: {
 						propType: function() { return 'dacha'; }
 					}
 				})
 				.when('/bathhouse', {
-					templateUrl: '/flat.html',
+					templateUrl: 'flat.html',
 					controller: 'MainController',
 					resolve: {
 						propType: function() { return 'bathhouse'; }
 					}
 				})
 				.when('/garazh', {
-					templateUrl: '/flat.html',
+					templateUrl: 'flat.html',
 					controller: 'MainController',
 					resolve: {
 						propType: function() { return 'garazh'; }
 					}
 				})
 				.when('/property', {
-					templateUrl: '/flat.html',
+					templateUrl: 'flat.html',
 					controller: 'MainController',
 					resolve: {
 						propType: function() { return 'property'; }
 					}
 				})
 				.when('/zhilyo', {
-					templateUrl: '/flat.html',
+					templateUrl: 'flat.html',
 					controller: 'MainController',
 					resolve: {
 						propType: function() { return 'zhilyo'; }
 					}
 				})
 				.when('/zhil-pom', {
-					templateUrl: '/flat.html',
+					templateUrl: 'flat.html',
 					controller: 'MainController',
 					resolve: {
 						propType: function() { return 'zhil-pom'; }
 					}
 				})
 				.when('/turist', {
-					templateUrl: '/turist.html',
+					templateUrl: 'turist.html',
 					controller: 'TravelController',
 					resolve: {
 						tourType: function () { return 'turist'; }
 					}
 				})
 				.when('/turizm', {
-					templateUrl: '/turist.html',
+					templateUrl: 'turist.html',
 					controller: 'TravelController',
 					resolve: {
 						tourType: function () { return 'turizm'; }
